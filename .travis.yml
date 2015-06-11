@@ -2,13 +2,14 @@
 # Rename it ".travis.yml".
 # http://docs.travis-ci.com/user/build-configuration/
 
+sudo: required
+
 language: python
 
 python:
     - "3.4"
 
 before_install:
-    - sudo:required
     - sudo apt-get update
 
 install:
