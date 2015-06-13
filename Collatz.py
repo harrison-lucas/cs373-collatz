@@ -29,6 +29,14 @@ def collatz_eval (i, j) :
     j the end       of the range, inclusive
     return the max cycle length of the range [i, j]
     """
+    assert i > 0
+    assert j > 0
+
+    if(j > i):
+        # Make sure i < j so works in range function
+        temp = i
+        i = j
+        j = temp
     cache = [0]*500000
     finalMax = 1
     for n in range(i, j+1):
@@ -39,6 +47,8 @@ def collatz_eval (i, j) :
             cache[n] = curMax
         if(curMax > finalMax):
             finalMax = curMax
+
+    assert finalMax > 0
     return finalMax
 
 # -------------
