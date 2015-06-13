@@ -60,25 +60,29 @@ class TestCollatz (TestCase) :
         v = collatz_calc(10)
         self.assertEqual(v, 7)
 
-    def test_calc_1(self) :
+    def test_calc_2(self) :
         v = collatz_calc(100)
         self.assertEqual(v, 26)
 
-    def test_calc_1(self) :
+    def test_calc_3(self) :
         v = collatz_calc(172583)
         self.assertEqual(v, 197)
 
-    def test_calc_1(self) :
+    def test_calc_4(self) :
         v = collatz_calc(999999)
         self.assertEqual(v, 259)
 
-    def test_calc_1(self) :
+    def test_calc_5(self) :
         v = collatz_calc(1)
         self.assertEqual(v, 1)
 
-    def test_calc_1(self) :
+    def test_calc_6(self) :
         v = collatz_calc(2)
         self.assertEqual(v, 2)
+
+    def test_calc_7(self) :
+        v = collatz_calc(46359)
+        self.assertEqual(v, 58)
 
     # -----
     # print
