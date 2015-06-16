@@ -32,7 +32,7 @@ def collatz_eval (i, j) :
     assert i > 0
     assert j > 0
 
-    if(j > i):
+    if(j < i):
         # Make sure i < j so works in range function
         temp = i
         i = j
