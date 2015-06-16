@@ -1,15 +1,10 @@
 #!/usr/bin/env python3
 
-
 import sys
 
-# ----
-# main
-# ----
-
-if __name__ == "__main__" :
-    collatz_solve(sys.stdin, sys.stdout)
-
+# ------------
+# collatz_read
+# ------------
 
 def collatz_read (s) :
     """
@@ -33,7 +28,7 @@ def collatz_eval (i, j) :
     assert i > 0
     assert j > 0
 
-    if(j > i):
+    if(j < i):
         # Make sure i < j so works in range function
         temp = i
         i = j
@@ -41,11 +36,14 @@ def collatz_eval (i, j) :
     cache = [0]*500000
     finalMax = 1
     for n in range(i, j+1):
-        if(cache[n] != 0):
-            curMax = cache[n]
+        if(n < 500000):
+            if(cache[n] != 0):
+                curMax = cache[n]
+            else:
+                curMax = collatz_calc(n)
+                cache[n] = curMax
         else:
             curMax = collatz_calc(n)
-            cache[n] = curMax
         if(curMax > finalMax):
             finalMax = curMax
 
@@ -97,3 +95,13 @@ def collatz_solve (r, w) :
         i, j = collatz_read(s)
         v    = collatz_eval(i, j)
         collatz_print(w, i, j, v)
+
+
+# ----
+# main
+# ----
+
+if __name__ == "__main__" :
+    collatz_solve(sys.stdin, sys.stdout)
+
+
