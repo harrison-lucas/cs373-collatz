@@ -1,0 +1,266 @@
+commit 84465ad432db4e5dcdbc5e8e30f2bdee04a4f9af
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Tue Jun 16 16:15:37 2015 -0500
+
+    fixed spherecollatz
+
+commit 71b72bf6c869ed60d26aa3d043811982748c1fcd
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Tue Jun 16 16:07:30 2015 -0500
+
+    trying to merge
+
+commit bf1e55cc6d68495c1336c718c92cdc0033895bfa
+Merge: da47c44 819949a
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Tue Jun 16 15:29:45 2015 -0500
+
+    Merge remote-tracking branch 'origin/dev-branch'
+    
+    Conflicts:
+    	__pycache__/Collatz.cpython-34.pyc
+
+commit 819949a3d682f50e7c3da3ed96916f17cac863d7
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Tue Jun 16 15:17:00 2015 -0500
+
+    fixes #3
+
+commit da47c440f9c8b47536e1d80cde22053b0ad872ac
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Tue Jun 16 15:14:07 2015 -0500
+
+    Revert "closes #14"
+    
+    This reverts commit 0b55a662538782ce82adc55e6af818d248d9d731.
+
+commit 0b55a662538782ce82adc55e6af818d248d9d731
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Tue Jun 16 15:09:01 2015 -0500
+
+    closes #14
+
+commit 252823bee73f875592d7bbe4e5f633c84d15b1de
+Merge: 0a9d6b8 4673a53
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Tue Jun 16 15:01:13 2015 -0500
+
+    Merge remote-tracking branch 'origin/dev-branch'
+
+commit 4673a5310389caedaada76a744125227ace96e0e
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Tue Jun 16 14:54:17 2015 -0500
+
+    closes #3
+
+commit 0a9d6b8c36fe865cb3d31fcd2bbedbb7b6934670
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Tue Jun 16 14:53:31 2015 -0500
+
+    fixes #13
+
+commit 637d41452832e1cfb1cd2c388356f711bae3f5d7
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Mon Jun 15 21:39:05 2015 -0500
+
+    tests #11
+    
+    added a test with the reverse range of the test before it. handles the
+    case where the first input is the larger of the two.
+
+commit d1ec4d3cde2fa04aef6c9548b5f9cae5b27e8bd7
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Mon Jun 15 21:35:08 2015 -0500
+
+    closes #11
+
+commit 7c41a64091e130e5127bf55c11ae74cbe975ebd9
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Mon Jun 15 21:32:00 2015 -0500
+
+    added collatz_calc to the import of tests
+
+commit d31c776d0861ee38bc5b0ad794a7bb87ab86d6a0
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Mon Jun 15 21:27:29 2015 -0500
+
+    Revert "actually passes sphere!"
+    
+    This reverts commit 0875345ce01302fc946944938afd9f48abfa1cf2.
+
+commit 157fac4839c1fc0772b6914495a7376aafe4bd31
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Mon Jun 15 21:27:23 2015 -0500
+
+    Revert "added make clean to .yml file"
+    
+    This reverts commit ebdffbf65a66fcbecc74834704f4047ae1104bc1.
+
+commit ebdffbf65a66fcbecc74834704f4047ae1104bc1
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Mon Jun 15 21:22:40 2015 -0500
+
+    added make clean to .yml file
+    
+    can't figure out why fixing issue #11 is causing travis ci to fail even
+    though the tests pass locally and on sphere. Maybe has residual .out
+    files or something
+
+commit 4334286c1f6cc84a39f7af41a3c8d58b8d8f3007
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Mon Jun 15 21:16:23 2015 -0500
+
+    Revert "Closes #11"
+    
+    This reverts commit b1d69c2f9880aa7d3e5b0dcee1745df729b3ea64.
+
+commit b1d69c2f9880aa7d3e5b0dcee1745df729b3ea64
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Mon Jun 15 21:05:09 2015 -0500
+
+    Closes #11
+    
+    had the wrongsign needed for swap
+
+commit 51586c332200d524976f6e7d889f2efbb32a78a3
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Mon Jun 15 21:03:41 2015 -0500
+
+    Revert "Closes #11 Closes #12"
+    
+    This reverts commit d01a7b837b03e54f227536d5c0786ab65fb2f0e7.
+
+commit d01a7b837b03e54f227536d5c0786ab65fb2f0e7
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Mon Jun 15 20:54:58 2015 -0500
+
+    Closes #11 Closes #12
+
+commit 0875345ce01302fc946944938afd9f48abfa1cf2
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Mon Jun 15 20:29:58 2015 -0500
+
+    actually passes sphere!
+    
+    Accidently committed an older version that didn't quite pass sphere.
+    Needed to move main to the bottom and make sure that i was less than j
+
+commit 9e100bf7ed2d9345900842c71fbaedfc32e3646e
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Sat Jun 13 18:20:38 2015 -0500
+
+    passes sphere!! 2.56 seconds
+    
+    Closes #6
+    passes sphere with a very basic cache implementation
+
+commit c63d6b8e479f3cbe5f8a39150726e0ac9754de11
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Sat Jun 13 17:47:14 2015 -0500
+
+    closes #10
+    
+    added assertions for collatz_eval
+
+commit 0dabc425d580dc0cd8e7ea5be6a0f6a087119910
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Sat Jun 13 17:35:08 2015 -0500
+
+    added very basic cache
+    
+    closes #8 by adding a very basic cache that remembers any values up to
+    500,000 that it has already computed
+
+commit 8ad4673d6c97774096c07a3feaff69d308c2e1ff
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Sat Jun 13 16:51:04 2015 -0500
+
+    Closes #9
+    
+    trying to close issue #9 again
+
+commit e070fa0e4d579441dad0556b10c00c327c630a7d
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Sat Jun 13 16:46:19 2015 -0500
+
+    Closes #9
+    
+    Attempting to close issue number 9. just added a random newline so
+    something would be new and could commit
+
+commit 95090c3e0234010be68c85fa89c3e150dccabe02
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Sat Jun 13 16:42:40 2015 -0500
+
+    fixed numbering on collatz_calc unit tests
+    
+    closes #2
+
+commit c7aef7007a3b52499e835eae6b6854e01c69f200
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Sat Jun 13 16:37:22 2015 -0500
+
+    unit tests for collatz_calc
+    
+    added 5 unit tests for collatz_calc
+
+commit ee693b412a19befe1be4e36e2ee8211fbf917067
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Thu Jun 11 19:20:34 2015 -0500
+
+    updated test collatz to proper values
+    
+    changed the skeleton tests from all expected values of 1 to the actual
+    expected values of the four solutions from the sphere website
+
+commit df07df9bafa587976904158d9e96a5747e64f3f2
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Thu Jun 11 19:17:29 2015 -0500
+
+    fixed collatz_eval for basic solution
+
+commit 31a811f54e685fcb66c0dc3d8ff4704f4970dab7
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Thu Jun 11 18:07:28 2015 -0500
+
+    4th try at .yml file
+
+commit 633195aebc0874584b53d77f474fcffbd2b4b148
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Thu Jun 11 18:01:29 2015 -0500
+
+    moved sudo:required into "before install"
+
+commit e4f591d02be818af8d72309ecc74745caa70fa21
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Thu Jun 11 17:58:22 2015 -0500
+
+    trying again to add sudo: required to top of .yml
+
+commit 438c001258afc82b9d0e1d763dcce0dc32f5f35b
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Thu Jun 11 17:49:33 2015 -0500
+
+    added sudo:required to .yml file
+
+commit d4900fe9843708d27166f5fbe243449386fff755
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Thu Jun 11 16:48:33 2015 -0500
+
+    initial commit
+    
+    Copied the skeleton code from professor's collatz
+
+commit 08df4032b21d50029a7931ecaa3478ec6179e346
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Mon Jun 8 20:49:45 2015 -0500
+
+    attempting to add to branch
+    
+    added stupid text to see if works
+
+commit 10f854ed29937de6abd27ae8c10aea1a11433ad7
+Author: harrison-lucas <harrisonlucas@utexas.edu>
+Date:   Mon Jun 8 20:24:43 2015 -0500
+
+    Initial commit
