@@ -40,11 +40,14 @@ def collatz_eval (i, j) :
     cache = [0]*500000
     finalMax = 1
     for n in range(i, j+1):
-        if(cache[n] != 0):
-            curMax = cache[n]
+        if(n < 500000):
+            if(cache[n] != 0):
+                curMax = cache[n]
+            else:
+                curMax = collatz_calc(n)
+                cache[n] = curMax
         else:
             curMax = collatz_calc(n)
-            cache[n] = curMax
         if(curMax > finalMax):
             finalMax = curMax
 
